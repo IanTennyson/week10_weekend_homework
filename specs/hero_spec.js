@@ -148,16 +148,6 @@ xit("HERO CAN: kill rat", function(){
 
 })
 
-
-
-
-
-
-
-
-
-
-
 it("HERO CAN'T: be in more than one place at a time", function(){
   hero1.enterNewLocation(startingLocation);
   hero1.enterNewLocation(location1);
@@ -177,9 +167,6 @@ it("HERO CAN: determine if a location is safe", function(){
   startingLocation.addToOccupants(rat1);
   assert.deepEqual("It's not safe here!", hero1.spawn(startingLocation))
 })
-
-
-
 
 
 

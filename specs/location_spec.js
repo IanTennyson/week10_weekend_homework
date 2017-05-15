@@ -11,9 +11,6 @@ var location2 = new Location("Shop");
 
 var hero1 = new Hero("Rick", "Pancakes")
 
-// console.log("STARTING LOCATION: ", startingLocation)
-// console.log("LOCATION ONE: ",location1)
-
 it("LOCATION HAS: name, listOfOccupants, isSafe boolean", function(){
   assert.deepEqual("Notice Board", location1.locationName);
   assert.deepEqual([], location1.listOfOccupants);

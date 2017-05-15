@@ -97,7 +97,6 @@ Hero.prototype = {
   enterNewLocation: function(newLocation){
     this.currentLocation = [];
     this.currentLocation.unshift(newLocation)
-    // console.log("THIS: ", this)
     newLocation.addToOccupants(this)
   },
 
@@ -109,12 +108,6 @@ Hero.prototype = {
       return this.name + " is travelling";
     };
     
-      
-      // console.log("THIS CURRENT LOCATION:", this.currentLocation)
-      // console.log("THIS CURRENT LOCATION[0]:", this.currentLocation[0])
-      // console.log("LIST OF OCCUPANTS:", this.currentLocation[0].listOfOccupants)
-
-      // console.log("VICIOUS:", this.currentLocation[0].listOfOccupants.isOccupantVicious());
     return "Your exit is blocked by "
     
   },
@@ -122,10 +115,8 @@ Hero.prototype = {
   spawn: function(home){
     this.currentLocation.push(home);
     home.addToOccupants(this)
-    // console.log("IS LOCATION SAFE?: ", home.isLocationSafe())
     if(!home.isLocationSafe()){
       return "It's not safe here!";
-      // this.fight();
     }
 
   },

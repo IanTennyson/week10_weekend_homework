@@ -6,6 +6,11 @@ var Rat = function(){
 };
 
 Rat.prototype = {
+
+  bite: function(victim){
+    victim.health -= 5
+  },
+
 }
 
 module.exports = Rat
